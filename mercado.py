@@ -72,13 +72,13 @@ def janela_lista():
     sg.theme("Reddit")
     # Menu
     menu_def = [
-        ['&File', ['&Adicionar', '&Editar', '&Remover', '!Disabled', '&Exit']]
+        ['&File', ['&Adicionar', '!Disabled', '&Exit']]
     ]
 
     # Layout
     layout = [
         [sg.Menu(menu_def, tearoff=False, key='menu')],
-        [sg.Text(text="Mercado", justification="center", font=('Arial', 19, 'bold'))],
+        [sg.Text(text="Mercado", justification="center", font=('Arial', 19, 'bold'), pad=(135, 0))],
         [
             sg.Text(text="Produto(s)", font=('Arial', 15, 'bold')),
             sg.Text(size=(10, 0)),
